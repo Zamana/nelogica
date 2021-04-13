@@ -28,7 +28,8 @@ Begin
       //Ajustando o STOP na virada do StopATR
       else if ((vStopATR[1] = 0) and (vStopATR = 1)) then
         begin
-          vSTOP := LOW - 0.01;
+          // Mínima dos últimos 2 candles
+          vSTOP := Lowest(LOW, 2);
         end
       // Se o StopATR virou de novo, reseta o STOP e continua no trade
       else if ((vStopATR[1] = 1) and (vStopATR = 0)) then
