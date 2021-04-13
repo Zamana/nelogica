@@ -37,3 +37,19 @@ Para inserir uma estratégia de execução, clique com o botão DIREITO do mouse
 Em seguida procure pela estratégia que deseja inserir.
 
 Para remover basta clicar com o botão DIREITO do mouse sobre um *candle* e clicar em "Excluir Estratégia de Execução".
+
+# Regra de coloração
+
+Para inserir uma regra de coloração, o procedimento é o mesmo da regra de execução: clique com o botão direito do mouse sobre um *candle* e selecione o item "Inserir Regra de Coloração". Para excluir, o procedimento é idêntico.
+
+# Regra de seleção (SCREENING)
+
+No Profit existe um recurso chamado **SCREENING** (Estratégias->Screening), que permite a seleção de ativos baseados em regras.
+
+As regras podem ser criadas usando-se um *wizard*, ou então codificadas:
+
+![image](https://user-images.githubusercontent.com/6900313/114629841-ac4e4880-9c8f-11eb-8b5e-3183b887a4a3.png)
+
+Caso se opte pelo "Usar Estratégia de Seleção", basta selecionar a estratégia previamente codificada.
+
+
