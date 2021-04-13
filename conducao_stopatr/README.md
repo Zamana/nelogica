@@ -16,7 +16,7 @@ Consulte o arquivo [INSTRUCOES.md](https://github.com/Zamana/nelogica/blob/2c278
 # USO
 Após ter entrado no *trade* na modalidade *long* ("ponta da compra"), o acompanhamento da evolução do *trade* pode ser feito com esta estratégia de execução vinculada ao gráfico.
 
-Quando for o momento de vender o ativo, aparecerá no gráfico a indicação "SelltoCover", conforme este exemplo:
+Quando for o momento de vender o ativo, aparecerá no gráfico a indicação **"SelltoCover"**, conforme este exemplo:
 
 ![image](https://user-images.githubusercontent.com/6900313/114630397-df450c00-9c90-11eb-86b6-7a326f387a1f.png)
 
