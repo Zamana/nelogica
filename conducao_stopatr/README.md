@@ -26,3 +26,6 @@ Já no círculo VERMELHO, a mínima foi rompida e a indicação de VENDA foi ati
 
 # IMPORTANTE
 > Esta estratégia não contempla a realização parcial; ela presta-se apenas a indicar o momento exato no qual um *trade* que está sendo conduzido pelo **STOP ATR** de acordo com o método do Lorenz deve ser vendido.
+ 
+# BÔNUS
+Esta estratégia pode ser aplicada na coloração para indicar o *candle* de saída (será colorido de AMARELO por default), e também como estratégia de seleção, que pode ser aplicado sobre o conjunto dos ativos comprados que estão indicando venda.
