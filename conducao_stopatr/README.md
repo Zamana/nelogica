@@ -20,9 +20,9 @@ Quando for o momento de vender o ativo, aparecerá no gráfico a indicação **"
 
 ![image](https://user-images.githubusercontent.com/6900313/114630397-df450c00-9c90-11eb-86b6-7a326f387a1f.png)
 
-Veja que no círculo VERDE não houve indicação de venda, porque o valor mínimo após a virada do StopATR (barra AMARELA acima dos *candles*) não foi rompida.
+Veja que no círculo VERDE não houve indicação de venda, porque o valor mínimo após a virada do **STOP ATR** (barra AMARELA acima dos *candles*) não foi rompida.
 
 Já no círculo VERMELHO, a mínima foi rompida e a indicação de VENDA foi ativada.
 
 # IMPORTANTE
-> Esta estratégia não contempla a realização parcial; ela presta-se apenas a indicar o momento exato no qual um *trade* que está sendo conduzido pelo STOP ATR de acordo com o método do Lorenz deve ser vendido.
+> Esta estratégia não contempla a realização parcial; ela presta-se apenas a indicar o momento exato no qual um *trade* que está sendo conduzido pelo **STOP ATR** de acordo com o método do Lorenz deve ser vendido.
