@@ -1,3 +1,9 @@
+// Código para condução de trade pelo método STOP ATR
+//
+// Não usar como estratégia geral de compra & venda de ativos
+// Usar apenas como facilitador para visualizar a saída do trade
+//
+
 Input
   Períodos(21);
   Desvio(2.00);
