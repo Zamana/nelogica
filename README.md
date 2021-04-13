@@ -1,6 +1,6 @@
 # Nelogica
 
-Estratégias de execução, coloração e seleção para o Profit da Nelógica
+Estratégias de execução, coloração e seleção para o [Profit da Nelógica](https://www.nelogica.com.br)
 
 Este repositório tem por objetivo armazenar códigos de execução, coloração e seleção para o produto Profit da Nelógica.
 
@@ -15,3 +15,6 @@ Estas estratégias no Profit, ao contrário de um robô, não efetuam os trades 
 # ATENÇÃO
 
 > Nenhuma estratégia aqui apresentada deve ser usada como "*setup*" para trade. Todo e qualquer risco ou perda envolvido no uso destes códigos é de inteira responsabilidade de quem decidiu utilizá-los.
+
+# OBSERVAÇÃO
+> Não tenho qualquer vínculo com a Nelógica que não seja o de cliente utilizador da plataforma que eles comercializam.
