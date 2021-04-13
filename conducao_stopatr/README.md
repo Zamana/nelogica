@@ -20,7 +20,7 @@ Quando for o momento de vender o ativo, aparecerá no gráfico a indicação **"
 
 ![image](https://user-images.githubusercontent.com/6900313/114633258-97c17e80-9c96-11eb-984f-1c824a5cf38f.png)
 
-Veja que no círculo VERDE não houve indicação de venda, porque o valor mínimo após a virada do **STOP ATR** (barra AMARELA acima dos *candles*) não foi rompida.
+Veja que no círculo VERDE não houve indicação de venda, porque o valor mínimo após a virada do **STOP ATR** (barra AMARELA acima dos *candles*) não foi rompido.
 
 Já no círculo VERMELHO, a mínima foi rompida e a indicação de VENDA foi ativada.
 
