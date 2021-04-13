@@ -10,7 +10,7 @@ Independentemente do método utilizado para a entrada no *trade*, o restante da 
 > Esta estratégia de execução, coloração e seleção trabalha apenas na modalidade *long* ("ponta da compra").
 
 # IMPORTAÇÃO
-Consulte o arquivo INSTRUCOES.md na raiz deste projeto para verificar como fazer a importação da estratégia.
+Consulte o arquivo [INSTRUCOES.md](https://github.com/Zamana/nelogica/blob/2c2781093988e4eb594d61d0dd43e12ed96fa931/INSTRUCOES.md) na raiz deste projeto para verificar como fazer a importação da estratégia.
 
 # USO
 Após ter entrado no *trade* na modalidade *long* ("ponta da compra"), o acompanhamento da evolução do *trade* pode ser feito com esta estratégia de execução vinculada ao gráfico.
