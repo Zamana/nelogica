@@ -1,0 +1,42 @@
+Input
+  Períodos(21);
+  Desvio(2.00);
+
+Var
+  vSTOP    : Float;
+  vStopATR : Float;
+
+Begin
+  
+  vStopATR := StopATR(Desvio,Períodos,0)|1|;
+
+  // Critérios para a venda
+  if (IsBought) then
+    begin
+      // Saída por STOP
+      if (LOW <= vSTOP) then
+        begin
+          SellToCoverStop(vSTOP,vSTOP);
+          PaintBar(clYellow);
+        end
+      //Ajustando o STOP na virada do StopATR
+      else if ((vStopATR[1] = 0) and (vStopATR = 1)) then
+        begin
+          vSTOP := LOW - 0.01;
+        end
+      // Se o StopATR virou de novo, reseta o STOP e continua no trade
+      else if ((vStopATR[1] = 1) and (vStopATR = 0)) then
+        vSTOP := 0;
+    end
+  // Critérios para COMPRA:
+  // se houve a virada do STOP ATR
+  else if ((vStopATR[1] = 1) and (vStopATR = 0)) then
+    begin
+      // Compra na superação da máxima do candle anterior
+      BuyLimit(HIGH[1] + 0.01);
+      vSTOP := 0;
+      Select;
+      PaintBar(clBlue);
+      end;
+    End;
+    ```
