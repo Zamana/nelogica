@@ -39,10 +39,10 @@ Begin
   // se houve a virada do STOP ATR
   else if ((vStopATR[1] = 1) and (vStopATR = 0)) then
     begin
-      // Compra na superação da máxima do candle anterior
-      BuyLimit(HIGH[1] + 0.01);
-      vSTOP := 0;
-      Select;
-      PaintBar(clBlue);
+        // Compra na superação da máxima do candle anterior
+        BuyLimit(HIGH[1] + 0.01);
+        vSTOP := 0;
+        Select;
+        PaintBar(clBlue);
       end;
     End;
