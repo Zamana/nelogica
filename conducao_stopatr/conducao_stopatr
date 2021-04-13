@@ -39,4 +39,3 @@ Begin
       PaintBar(clBlue);
       end;
     End;
-    ```
