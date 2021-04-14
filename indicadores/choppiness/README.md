@@ -1,5 +1,5 @@
 # Choppiness
-Criado por E.W. Dreiss, o indicador Choppiness é usado para determinar se o mercado está em tendência ou lateralizado. É similar ao ADX, entretanto alguns *traders* consideram o Choppiness mais 
+Criado por E. W. "Bill" Dreiss, o indicador Choppiness é usado para determinar se o mercado está em tendência ou lateralizado. É similar ao ADX, entretanto alguns *traders* consideram o Choppiness mais 
 preciso e superior.
 
 # Como interpretar
