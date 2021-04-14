@@ -1,0 +1,46 @@
+Input
+  // Período padrão; ajustável através da interface gráfica
+  Períodos(14);
+
+Var
+  n   : Integer; // indexador
+  sTR : Float;   // Average True Range
+  sTH : Float;   // True High
+  sTL : Float;   // True Low
+
+
+// Definindo o Log10 a partir do Log Natural,
+// uma vez que o Profit não disponibiliza o
+// Log10 nativamente na biblioteca de funções.
+Function Log10(x: Float): Float;
+Begin
+    Result := Log(x)/Log(10);
+End;
+
+Begin
+  
+  // Somatório de Average True Range (ATR), 
+  // média aritmética, do período
+
+  sTR := 0;
+  for n := 0 to Períodos - 1 do
+  begin
+     sTR := sTR + AvgTrueRange(1, 0)[n];
+  end;
+
+  // Maximo das máximas do período
+  sTH := Highest(High, Períodos);
+
+  // Mínima das mínimas do período
+  sTL := Lowest(Low, Períodos);
+
+  // Evita divisão por ZERO e plota o indicador de acordo  
+  if sTH-sTL <> 0 then
+  begin
+    Plot(100*Log10(sTR)/(sTH-sTL)/Log10(Períodos));
+  end;
+End;
+
+// Referências: 
+// https://www.tradingview.com/support/solutions/43000501980-choppiness-index-chop/
+// https://patternswizard.com/choppiness-index/
