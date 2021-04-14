@@ -5,7 +5,7 @@
 
 O objetivo deste código é facilitar a condução de um *trade* pelo método do **STOP ATR**, conforme preconizado pelo Fabrício Lorenz da L&S Educação, mentor da ACADEMIA DO TRADER.
 
-Independentemente do método utilizado para a entrada no *trade*, o restante da condução pode ser verificado com este facilitador.
+Independentemente do método utilizado para a entrada no *trade*, o restante da condução pode ser verificada com este facilitador.
 
 # IMPORTANTE
 > Esta estratégia de execução, coloração e seleção trabalha apenas na modalidade *long* ("ponta da compra").
