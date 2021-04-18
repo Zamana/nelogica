@@ -1,0 +1,79 @@
+// Código para SELEÇÃO (SCREENING) e COLORAÇÃO
+// de "Barras de Ignição" (também chamadas de "Barra Elefante"
+//
+// OBS.: detecção puramente quantitativa; é necessário analisar o contexto
+// geral antes de se concluir que se trata efetivamente de uma barra de ignição legítima
+
+
+// Parâmetros configuráveis pela interface do SCREENING
+Input
+  Periodo(20);               // Periodo para comparação dos candles
+  Volume_Minimo(5000000);    // Volume mínimo para seleção de ativos
+  Usa_Pavio(false);          // Usa o tamanho do pavio para caracterizar "Barra de Ignição"? Se sim...
+  Pavio_Limite(10);          // ...qual a porcentagem máxima do tamanho dos pavios em relação ao corpo?
+
+Var
+  n          : Integer; // Iterador
+  vMaxAmp    : Float;   // Amplitude máxima até o momento
+  vAmp       : Float;   // Amplitude (variável de trabalho)
+  vUpperLine : Float;   // Amplitude do pavio superior
+  vLowerLine : Float;   // Amplitude do pavio inferior
+  vCandle    : Float;   // Amplitude do candle ATUAL
+  vTipo      : Integer; // 0 para candle de ALTA e 1 para candle de BAIXA
+
+Begin
+
+  // Teste do volume para eliminar os que não satisfazem o critério
+  if (Volume >= Volume_Minimo) then
+  begin
+
+  // Calcula a amplitude máxima dos últimos candles
+  vMaxAmp := 0;
+  for n := 1 to Periodo + 1 do
+  begin
+    vAmp := Abs(Open[n]-Close[n]);
+    if (vAmp > vMaxAmp) then
+    begin
+      vMaxAmp := vAmp;
+    end;
+  end;
+
+  // Se o candle atual tem amplitude maior que a dos últimos candles...
+  if (Abs(Open[0]-Close[0]) > vMaxAmp) then
+  begin
+
+    // Verifica se é candle de ALTA ou BAIXA para fazer o cálculo dos pavios:
+    // 0 -> ALTA / 1 -> BAIXA
+    if ( (Close[0] - Open[0]) > 0) then vTipo := 0 else vTipo := 1;
+
+    // Amplitude do candle ATUAL
+    vCandle := Abs(Close[0]-Open[0]);
+
+    if (vTipo = 0) then // Candle de Alta
+    begin
+      vUpperLine := High[0]-Close[0];
+      vLowerLine := Open[0]-Low[0];
+    end
+    else // Candle de baixa
+    begin
+      vUpperLine := High[0]-Open[0];
+      vLowerLine := Close[0]-Low[0];
+    end;
+
+    // Teste da proporção dos pavios
+    if (Usa_Pavio) then
+    begin
+      if ( (vUpperLine/vCandle <= Pavio_Limite/100) and
+           (vLowerLine/vCandle <= Pavio_Limite/100) ) then
+      begin
+        Select;
+        if (vTipo = 0) then PaintBar(clAzulClaro) else PaintBar(clFucsia);
+      end;
+    end
+    // Se não usa o pavio, pinta e seleciona
+    else
+      Select;
+      if (vTipo = 0) then PaintBar(clAzulClaro) else PaintBar(clFucsia);
+    end;
+  End;
+End;
