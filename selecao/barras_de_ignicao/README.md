@@ -11,7 +11,7 @@ Os seguintes parâmetros podem ser configurados:
 - Se é ou não para usar o tamanho do pavio na comparação, e em caso afirmativo...
 - Qual é a porcentagem aceitável
 
-![image](https://user-images.githubusercontent.com/6900313/115163920-480df900-a082-11eb-9c9b-8e119cb0a421.png)
+![image](https://user-images.githubusercontent.com/6900313/115165328-b56e5980-a083-11eb-86e9-71b7c620500d.png)
 
 OBS.: esta seleção é estritamente **QUANTITATIVA** e não leva em considerações outros fatores necessários para a caracterização deste tipo de candle. 
 
