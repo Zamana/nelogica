@@ -25,7 +25,7 @@ Begin
   sTR := 0;
   for n := 0 to Períodos - 1 do
   begin
-     sTR := sTR + AvgTrueRange(1, 0)[n];
+     sTR := sTR + TrueRange[n];
   end;
 
   // Maximo das máximas do período
@@ -37,7 +37,7 @@ Begin
   // Evita divisão por ZERO e plota o indicador de acordo  
   if sTH-sTL <> 0 then
   begin
-    Plot(100*Log10(sTR)/(sTH-sTL)/Log10(Períodos));
+    Plot(100*Log10(sTR/(sTH-sTL))/Log10(Períodos));
   end;
 End;
 
