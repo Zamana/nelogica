@@ -4,7 +4,7 @@ Input
 
 Var
   n   : Integer; // indexador
-  sTR : Float;   // Average True Range
+  sTR : Float;   // True Range
   sTH : Float;   // True High
   sTL : Float;   // True Low
 
@@ -19,7 +19,7 @@ End;
 
 Begin
   
-  // Somatório de Average True Range (ATR), 
+  // Somatório dos True Range (TR), 
   // média aritmética, do período
 
   sTR := 0;
