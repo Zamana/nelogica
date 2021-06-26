@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////
+//
+// Estratégia de seleção de acordo com os critérios apresentados
+// pelo Lorenz neste vídeo no Youtube:
+//
+// https://youtu.be/FCQ4VzAgDQs 
+//
+// OBS.: além dos períodos das médias que são configuráveis, 
+// acrescentei critérios de volume financeiro e quantidade de
+// trades para uma filtragem mais fina.
+//
+////////////////////////////////////////////////////////////////////
+
+
+Input
+  m_Curta(9);             // Período padrão da média curta (exponencial)
+  m_Media(21);            // Período padrão da média média 
+  m_Longa(200);           // Período padrão da média longa
+  m_Longuissima(500);     // Período padrão da média longuíssima
+  v_Trades(1000);         // Quantidade mínima de negócios
+  v_Financeiro(5000000);  // Volume financeiro mínimo
+
+ Var
+   vCurta : Float;
+   vMedia : Float;
+   vLonga : Float;
+   vLonguissima : Float;
+
+Begin
+
+  // Cálculo das médias
+  vCurta := MediaExp(9, Close);
+  vMedia := Media(21, Close);
+  vLonga := Media(200, Close);
+  vLonguissima := Media(500, Close);
+
+  // Critério de seleção
+  if (CLOSE > vCurta) and
+     (CLOSE > vMedia) and
+     (CLOSE > vLonga) and
+     (vMedia > vLonga) and
+     (vLonga > vLonguissima) and
+     (Volume > v_Financeiro) and
+     (Trades > v_Trades)
+  then
+     Select;
+End;
