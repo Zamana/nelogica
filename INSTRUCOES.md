@@ -54,10 +54,11 @@ As regras podem ser criadas usando-se um *wizard*, ou então codificadas. Para e
 
 Para criar uma nova, clique no ícone com o sinal de "+" em VERDE, dê um nome para a estratégia; para editar uma estratégia existente, selecione-a na lista à esquerda. 
 
-![image](https://user-images.githubusercontent.com/6900313/114629841-ac4e4880-9c8f-11eb-8b5e-3183b887a4a3.png)
+![screening_novo_editar](https://user-images.githubusercontent.com/6900313/123527706-0324c500-d6b8-11eb-907f-9c2f11282c59.png)
+
 
 Para usar o Wizard (limitado a 5 condições), deixe o "Usar Filtro" selecionado. Caso tenha uma estratégia codificada, mude para "Usar estratégia de Seleção" e selecione a estratégia desejada.
 
+![image](https://user-images.githubusercontent.com/6900313/114629841-ac4e4880-9c8f-11eb-8b5e-3183b887a4a3.png)
+
 Caso se opte pelo "Usar Estratégia de Seleção", basta selecionar a estratégia previamente codificada.
-
-
