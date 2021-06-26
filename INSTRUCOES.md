@@ -48,11 +48,15 @@ No Profit existe um recurso chamado **SCREENING** (Estratégias->Screening), que
 
 ![estrategias_screening](https://user-images.githubusercontent.com/6900313/123527518-bb516e00-d6b6-11eb-8444-691c15f197ec.png)
 
-As regras podem ser criadas usando-se um *wizard*, ou então codificadas. Para criar ou editar uma nova estratégia de seleçaõ, clique no ícone do filtro:
+As regras podem ser criadas usando-se um *wizard*, ou então codificadas. Para editar uma estratégia existente ou criar uma nova, clique no ícone do filtro:
 
-![screening_filtro](https://user-images.githubusercontent.com/6900313/123527542-04092700-d6b7-11eb-8449-3c4f640242a6.png)
+![screening_filtro](https://user-images.githubusercontent.com/6900313/123527593-4c284980-d6b7-11eb-9e43-a0baa179010e.png)
+
+Para criar uma nova, clique no ícone com o sinal de "+" em VERDE, dê um nome para a estratégia; para editar uma estratégia existente, selecione-a na lista à esquerda. 
 
 ![image](https://user-images.githubusercontent.com/6900313/114629841-ac4e4880-9c8f-11eb-8b5e-3183b887a4a3.png)
+
+Para usar o Wizard (limitado a 5 condições), deixe o "Usar Filtro" selecionado. Caso tenha uma estratégia codificada, mude para "Usar estratégia de Seleção" e selecione a estratégia desejada.
 
 Caso se opte pelo "Usar Estratégia de Seleção", basta selecionar a estratégia previamente codificada.
 
