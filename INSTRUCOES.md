@@ -59,6 +59,12 @@ Para criar uma nova, clique no ícone com o sinal de "+" em VERDE, dê um nome p
 
 Para usar o Wizard (limitado a 5 condições), deixe o "Usar Filtro" selecionado. Caso tenha uma estratégia codificada, mude para "Usar estratégia de Seleção" e selecione a estratégia desejada.
 
+Para aplicar a estratégia, selecione a periodicidade, a lista de ações sobre as quais deseja aplicar a seleção ("COMPLETO" no exemplo) e então clique em "APLICAR".
+
+DICA: colocar a janela do SCREENING no mesmo grupo das outras janelas permite que a ação seja alterada de acordo nas outras janelas (inclusive no gráfico) com um duplo-clique do mouse.
+
+![screening_grupo](https://user-images.githubusercontent.com/6900313/123527801-e210a400-d6b8-11eb-9a8c-399eb3121d2a.png)
+
 ![image](https://user-images.githubusercontent.com/6900313/114629841-ac4e4880-9c8f-11eb-8b5e-3183b887a4a3.png)
 
 Caso se opte pelo "Usar Estratégia de Seleção", basta selecionar a estratégia previamente codificada.
