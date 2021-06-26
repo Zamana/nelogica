@@ -1,4 +1,4 @@
-# Seleção de ações de acordo com Fabrício Lorenz
+# Seleção de ações para Swing Trade de acordo com Fabrício Lorenz
 
 Este código de seleção identifica ações propícias para compra em Swing Trade de acordo com o vídeo publicado no Youtube do Lorenz:
 
