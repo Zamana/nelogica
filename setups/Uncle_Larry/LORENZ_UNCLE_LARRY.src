@@ -1,0 +1,80 @@
+//
+// Codificação da estratégia de execução, seleção e coloração
+// chamada "Tio Larry" (aqui chamada de "Uncle Larry") apresentada
+// pelo Lorenz neste vídeo: https://youtu.be/QrxUReBhjko
+// 
+// Acrescentei uma FLAG (Faz_DayTrade) para aqueles que querem
+// fazer Day Trade, ou seja, entrar e sair do trade no mesmo dia
+// caso as condições de compra e venda sejam atingidas no mesmo
+// dia. Esta flag não faz sentido na seleção, e precisa ser alterada
+// diretamente no código caso queira que ela seja refletida no gráfico
+// se for aplicada como estratégia de execução.
+//
+// Acrescentei também os parâmetros de quantidade de negócios
+// e volume financeiro para eliminar papéis com menor liquidez
+//
+// OBS.: o setup não foi apresentado com STOP, de tal forma que
+// às vezes há um drawdown violento (experimente fazer o backtest
+// passando pelo período do início da pandemia - 03/2020 - por exemplo)
+
+
+// Parâmetro ajustáveis pela interface de seleção (SCREENING)
+Input
+  Faz_DayTrade(false); // flag para indicar se faz day trade
+                       // Troque para "true" para refletir no gráfico
+                       // caso queira fazer Day Trade.
+                       // Para a seleção não tem efeito
+
+  Negócios(500);       // quantidade mínima de negócios para seleção
+  Financeiro(1000000); // volume financeiro mínimo para seleção
+
+
+// Variáveis
+Var
+  vMLonga : Float; // Média de 21 períodos
+  vMMin   : Float; // Média das mínimas
+  vMMax   : Float; // Média das máximas
+
+// Início da estratégia
+Begin
+
+  // Obtendo os valores das médias
+  vMLonga := Media(21, Close);  // Média de 21
+  vMMin   := Media(3, Low);     // Média das mínimas
+  vMMax   := Media(3, High);    // Média das máximas
+
+  // Se está comprado...
+  if (IsBought) then
+    begin
+      // Se o preço passou pela média VMMax, então VENDE
+      if (High >= vMMax) then
+      begin  
+        SellToCoverStop(vMMax, vMMax);
+        PaintBar(clFucsia);
+      end;
+    end
+
+  // Se não está comprado e a média de 21 está subindo...
+  // (juntamente com as condições de quantidade de negócios
+  // e volume financeiro)
+  else if (vMLonga > vMLonga[1])
+    and (Trades > Negócios)
+    and (Volume > Financeiro) then
+  begin
+    // Se o preço passou pela média VMMin, então COMPRA
+    if (Low <= vMMin) then
+    begin
+      BuyLimit(vMMin);
+      Select;
+      PaintBar(clAqua);
+    end;
+
+    // Se atingiu o alvo no mesmo dia e a flag Faz_DayTrade está habilitada,
+    // então VENDE
+    if (IsBought) and (Faz_DayTrade) and (High >= vMMax) then
+      begin  
+        SellToCoverStop(vMMax, vMMax);
+        PaintBar(clFucsia);
+      end;
+  end;
+End;
