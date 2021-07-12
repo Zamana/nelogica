@@ -1,6 +1,6 @@
 # Estratégia "Tio Larry" do Lorenz
 
-Em 0407/2021 o Fabrício Lorenz do canal "No Pain, No Gain" apresentou um vídeo (juntamente com sua esposa) entitulado ["Dinheiro e CONSISTÊNCIA - Como atingir"](!https://youtu.be/QrxUReBhjko), mostrando uma estratégia extremamente simples que, se seguida fielmente, forneces excelentes retornos financeiros no médio a longo prazo.
+Em 0407/2021 o Fabrício Lorenz do canal "No Pain, No Gain" apresentou um vídeo (juntamente com sua esposa) entitulado ("Dinheiro e CONSISTÊNCIA - Como atingir")[!https://youtu.be/QrxUReBhjko], mostrando uma estratégia extremamente simples que, se seguida fielmente, forneces excelentes retornos financeiros no médio a longo prazo.
 
 Codificação da estratégia de execução, seleção e coloração
 chamada "Tio Larry" (aqui chamada de "Uncle Larry") apresentada
