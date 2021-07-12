@@ -17,3 +17,29 @@ Acrescentei também os parâmetros de quantidade de negócios e volume financeir
 > O *setup* não foi apresentado com **STOP**, de tal forma que às vezes há um *drawdown* violento (experimente, por exemplo, fazer o *backtest* passando pelo período do início da > pandemia - 03/2020).
 
 Mantive a estratégia assim mas posso adaptá-la para contemplar um **STOP** caso haja interesse.
+
+# *Backtests*
+
+Aplicando a estratégia como filtro de seleção após o pregão do dia 12/07 com os requisitos *default* (número de negócios acima de 500 e volume financeiro acima de 1 milhão de reais), obtive a seguinte seleção de ativos no período diário:
+
+![image](https://user-images.githubusercontent.com/6900313/125369282-52beee00-e352-11eb-9d37-f620354aea1b.png)
+
+Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11/07/2021) obtive esses resultados para as primeiras ações (ordenadas em ordem descrescente de rentabilidade nos últimos 3 meses) para uma quantidade fixa de 500 ações:
+
+## PTBL3
+
+### Resumo
+![image](https://user-images.githubusercontent.com/6900313/125369551-d7117100-e352-11eb-88c1-fecd2b6f91c6.png)
+
+### Lista de operações
+![image](https://user-images.githubusercontent.com/6900313/125369602-edb7c800-e352-11eb-8f42-4984d9d2778b.png)
+
+### Gráfico de operações
+![image](https://user-images.githubusercontent.com/6900313/125369639-0aec9680-e353-11eb-8ff0-5cc4881fefbf.png)
+
+### Curva de capital
+![image](https://user-images.githubusercontent.com/6900313/125369682-2061c080-e353-11eb-8004-1841edd89d2b.png)
+
+
+
+
