@@ -16,7 +16,7 @@ Acrescentei uma *flag* (Faz_DayTrade) para aqueles que querem fazer **Day Trade*
 Acrescentei também os parâmetros de quantidade de negócios e volume financeiro para eliminar papéis com menor liquidez 
 
 # ALERTA
-> O *setup* não foi apresentado com **STOP**, de tal forma que às vezes há um *drawdown* violento (experimente, por exemplo, fazer o *backtest* passando pelo período do início da > pandemia - 03/2020).
+> O *setup* não foi apresentado com **STOP**, de tal forma que às vezes há um *drawdown* violento (experimente, por exemplo, fazer o *backtest* passando pelo período do início da pandemia - 03/2020).
 
 Mantive a estratégia assim mas posso adaptá-la para contemplar um **STOP** caso haja interesse.
 
