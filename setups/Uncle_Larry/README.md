@@ -40,6 +40,36 @@ Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11
 ### Curva de capital
 ![image](https://user-images.githubusercontent.com/6900313/125369682-2061c080-e353-11eb-8004-1841edd89d2b.png)
 
+--
 
+## TOTS3
+
+### Resumo
+![image](https://user-images.githubusercontent.com/6900313/125369926-abdb5180-e353-11eb-97c9-444cfcfa8640.png)
+
+### Lista de operações
+![image](https://user-images.githubusercontent.com/6900313/125369953-bbf33100-e353-11eb-8928-d1ef56da3b6c.png)
+
+### Gráfico de operações
+![image](https://user-images.githubusercontent.com/6900313/125369980-d0cfc480-e353-11eb-8f4e-ae3c8462bfe9.png)
+
+### Curva de capital
+![image](https://user-images.githubusercontent.com/6900313/125370010-e349fe00-e353-11eb-8113-a2a57dc0dda9.png)
+
+--
+
+## SQIA3
+
+### Resumo
+![image](https://user-images.githubusercontent.com/6900313/125370049-fa88eb80-e353-11eb-8322-941957daad06.png)
+
+### Lista de operações
+![image](https://user-images.githubusercontent.com/6900313/125370072-096f9e00-e354-11eb-8adc-567c369ae971.png)
+
+### Gráfico de operações
+![image](https://user-images.githubusercontent.com/6900313/125370107-18eee700-e354-11eb-8ee0-09bd0fc00511.png)
+
+### Curva de capital
+![image](https://user-images.githubusercontent.com/6900313/125370145-2b692080-e354-11eb-8ee1-83ab380ead13.png)
 
 
