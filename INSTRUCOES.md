@@ -134,6 +134,9 @@ Certifique-se de escolher o tempo gráfico adequado para a sua estratégia neste
 
 ![image](https://user-images.githubusercontent.com/6900313/125376618-cd433a00-e361-11eb-8c30-7734797dc070.png)
 
+5.5 É possível fazer ajustes na quantidade de ações (e consequentemente no capital inicial necessário para conduzir a operação), bem como no intervalo de tempo que se deseja testar a estratégia:
+
+![image](https://user-images.githubusercontent.com/6900313/125378021-607d6f00-e364-11eb-9884-f784e170ecc8.png)
 
 
 
