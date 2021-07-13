@@ -118,7 +118,7 @@ Certifique-se de escolher o tempo gráfico adequado para a sua estratégia neste
 
 5.1 Resumo
 
-![image](https://user-images.githubusercontent.com/6900313/125376436-5dcd4a80-e361-11eb-9833-b37c126235cc.png)
+![image](https://user-images.githubusercontent.com/6900313/125377800-fb297e00-e363-11eb-9856-0b06b7bf9bd2.png)
 
 > Repare no capital inicial, percentual de operações vencedoras/perdedoras, fator de lucro, retorno do capital incial etc.
 
