@@ -10,7 +10,7 @@ Esse, definitivamente, não é um *setup* "ganhar de balde e perder de colherinh
 Tomei a liberdade de acrescentar 2 ajustes para deixar a estratégia mais flexível:
 
 ## 1) Day Trade
-Acrescentei uma *flag* (Faz_DayTrade) para aqueles que querem fazer **Day Trade**, ou seja, entrar e sair do trade no mesmo dia caso as condições de compra e venda sejam atingidas no mesmo dia. Esta *flag* não tem efeito na seleção, e precisa ser alterada diretamente no código caso queira que ela seja refletida no gráfico se for aplicada como estratégia de execução.
+Acrescentei uma *flag* (Faz_DayTrade) para aqueles que querem fazer **Day Trade**, ou seja, entrar e sair do trade no mesmo dia caso as condições de compra e venda sejam atingidas no mesmo dia. Esta *flag* não tem efeito na seleção, e precisa ser alterada diretamente no código caso se queira que ela seja refletida no gráfico se for aplicada como estratégia de execução.
 
 ## 2) Número de negócios e Volume financeiro
 Acrescentei também os parâmetros de quantidade de negócios e volume financeiro para eliminar papéis com menor liquidez 
