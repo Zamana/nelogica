@@ -1,3 +1,8 @@
+# Índice
+
+[Importação de estratégias no Profit](#Importação-de-estratégias-no-Profit)
+
+
 # Importação de estratégias no Profit
 
 Um arquivo .PSF contém uma estratégia exportada, que pode ser usado para se importar a estratégia diretamente no Profit.
