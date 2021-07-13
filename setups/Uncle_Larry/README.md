@@ -20,6 +20,16 @@ Acrescentei também os parâmetros de quantidade de negócios e volume financeir
 
 Mantive a estratégia assim mas posso adaptá-la para contemplar um **STOP** caso haja interesse.
 
+# Aplicando a estratégia
+
+Para aplicar a estratégia, abra um gráfico novo, aplique as 3 médias móveis, uma de 21 e outras de 3, alterando as de 3 para mínimas e máximas, e troque as cores para facilitar a visualização. Pelo meu padrão, deixo a de 21 com a cor "padrão" (aquele verde claro), a das mínimas em azul claor (entrada) e a das máximas em *pink* (saída).
+
+Depois é só aplicar a estratégia na coloração e na execução para completar a visualização completa.
+
+![image](https://user-images.githubusercontent.com/6900313/125449336-9367e53f-af17-443a-b466-615728f6cbd9.png)
+
+Estas instruções mais específicas podem ser encontradas no arquivo [Instrucoes.md)() neste repositório.
+
 # *Backtests*
 
 Aplicando a estratégia como filtro de seleção após o pregão do dia 12/07 com os requisitos *default* (número de negócios acima de 500 e volume financeiro acima de 1 milhão de reais), obtive a seguinte seleção de ativos no período diário:
