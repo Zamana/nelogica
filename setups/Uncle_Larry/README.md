@@ -1,6 +1,6 @@
 # Estratégia "Tio Larry" do Lorenz
 
-Em 04/07/2021 o Fabrício Lorenz em seu canal "No Pain, No Gain" apresentou um vídeo (juntamente com sua esposa) entitulado ["Dinheiro e CONSISTÊNCIA - Como atingir"](https://youtu.be/QrxUReBhjko), mostrando uma estratégia extremamente simples que, se seguida fielmente, fornece excelentes retornos financeiros no médio a longo prazos.
+Em 04/07/2021 o Fabrício Lorenz em seu canal "No Pain, No Gain" apresentou um vídeo (juntamente com sua esposa) intitulado ["Dinheiro e CONSISTÊNCIA - Como atingir"](https://youtu.be/QrxUReBhjko), mostrando uma estratégia extremamente simples que, se seguida fielmente, fornece excelentes retornos financeiros no médio a longo prazos.
 
 Resolvi codificar a estratégia (veja os arquivos LORENZ_UNCLE_LARRY.src para o fonte e LORENZ_UNCLE_LARRY.psf para importação no Profit) e fiquei impressionado, tanto com a taxa de acerto como também com o *payoff*.
 
