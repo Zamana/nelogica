@@ -100,7 +100,7 @@ Para se fazer *backtests* siga este roteiro:
 
 2. No Editor de Estratégias, clique no ícone do disquete com a seta verde e selecione a estratégia desejada na lista (certifique-se de que a estratégia está com o *flag* "Execução" como "Sim":
 
-![image](https://user-images.githubusercontent.com/6900313/125377524-89e9cb00-e363-11eb-9d73-b1b721c5f3aa.png)
+![image](https://user-images.githubusercontent.com/6900313/125377661-be5d8700-e363-11eb-99db-e376411e20cf.png)
 
 3. No Editor de Estratégias, com o código da estratégia carregado, clique na aba "Misto", e no gráfico que está no lado direito da tela, digite o código do ativo sobre o qual deseja aplicar a estratégia:
 
