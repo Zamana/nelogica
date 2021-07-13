@@ -1,6 +1,9 @@
 # Índice
 
 [Importação de estratégias no Profit](#Importação-de-estratégias-no-Profit)
+[Usando estratégias](#Usando-estratégias)
+[Regra de coloração](#Regra-de-coloração)
+[Regra de seleção (SCREENING)](#Regra-de-seleção-(SCREENING))
 
 
 # Importação de estratégias no Profit
