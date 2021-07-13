@@ -4,7 +4,7 @@ Em 04/07/2021 o Fabrício Lorenz em seu canal "No Pain, No Gain" apresentou um v
 
 Resolvi codificar a estratégia (veja os arquivos LORENZ_UNCLE_LARRY.src para o fonte e LORENZ_UNCLE_LARRY.psf para importação no Profit) e fiquei impressionado, tanto com a taxa de acerto como também com o *payoff*.
 
-Esse, definitivamente, não é um *setup* "ganhar de balde e perder de colherinha", e está mais para o "de grão em grão a galinha enche o papo".
+Esse, definitivamente, não é um *setup* "ganhar de balde e perder de colherinha"; está mais para o "de grão em grão a galinha enche o papo".
 
 ## Adaptações 
 Tomei a liberdade de acrescentar 2 ajustes para deixar a estratégia mais flexível:
