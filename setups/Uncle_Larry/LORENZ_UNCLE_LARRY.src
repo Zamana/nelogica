@@ -1,4 +1,3 @@
-'''
 //
 // Codificação da estratégia de execução, seleção e coloração
 // chamada "Tio Larry" (aqui chamada de "Uncle Larry") apresentada
@@ -79,4 +78,3 @@ Begin
       end;
   end;
 End;
-'''
