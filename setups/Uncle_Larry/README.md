@@ -22,7 +22,7 @@ Mantive a estratégia assim mas posso adaptá-la para contemplar um **STOP** cas
 
 # Aplicando a estratégia
 
-Para aplicar a estratégia, abra um gráfico novo, aplique as 3 médias móveis, uma de 21 e outras de 3, alterando as de 3 para mínimas e máximas, e troque as cores para facilitar a visualização. Pelo meu padrão, deixo a de 21 com a cor "padrão" (aquele verde claro), a das mínimas em azul claor (entrada) e a das máximas em *pink* (saída).
+Para aplicar a estratégia, abra um gráfico novo, aplique as 3 médias móveis: uma de 21 e outras de 3, alterando as de 3 para mínimas e máximas, e troque as cores para facilitar a visualização. Pelo meu padrão, deixo a de 21 com a cor "padrão" (aquele verde claro), a das mínimas em azul claro (entrada) e a das máximas em *pink* (saída).
 
 Depois é só aplicar a estratégia na coloração e na execução para completar a visualização completa.
 
