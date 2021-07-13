@@ -126,7 +126,7 @@ Certifique-se de escolher o tempo gráfico adequado para a sua estratégia neste
 
 ![image](https://user-images.githubusercontent.com/6900313/125376545-9bca6e80-e361-11eb-83fd-b6f2d4cfce38.png)
 
-5.3 Gráfico de operaçòes
+5.3 Gráfico de operações
 
 ![image](https://user-images.githubusercontent.com/6900313/125376586-b4d31f80-e361-11eb-98b9-4dd20a37970d.png)
 
