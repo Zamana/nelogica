@@ -4,6 +4,8 @@ Em 04/07/2021 o Fabrício Lorenz em seu canal "No Pain, No Gain" apresentou um v
 
 Resolvi codificar a estratégia (veja os arquivos LORENZ_UNCLE_LARRY.src para o fonte e LORENZ_UNCLE_LARRY.psf para importação no Profit) e fiquei impressionado, tanto com a taxa de acerto como também com o *payoff*.
 
+Esse, definitivamente, não é um *setup* "ganhar de balde e perder de colherinha", e está mais para o "de grão em grão a galinha enche o papo".
+
 ## Adaptações 
 Tomei a liberdade de acrescentar 2 ajustes para deixar a estratégia mais flexível:
 
@@ -24,7 +26,7 @@ Aplicando a estratégia como filtro de seleção após o pregão do dia 12/07 co
 
 ![image](https://user-images.githubusercontent.com/6900313/125369282-52beee00-e352-11eb-9d37-f620354aea1b.png)
 
-Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11/07/2021) obtive esses resultados para as primeiras ações (ordenadas em ordem descrescente de rentabilidade nos últimos 3 meses) para uma quantidade fixa de 500 ações:
+Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11/07/2021) obtive esses resultados para as primeiras ações (ordenadas em ordem decrescente de rentabilidade nos últimos 3 meses) para uma quantidade fixa de 500 ações:
 
 ## PTBL3
 
@@ -40,7 +42,7 @@ Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11
 ### Curva de capital
 ![image](https://user-images.githubusercontent.com/6900313/125369682-2061c080-e353-11eb-8004-1841edd89d2b.png)
 
---
+---
 
 ## TOTS3
 
@@ -56,7 +58,7 @@ Fazendo o *backtest* no período exato dos últimos 12 meses (de 11/07/2020 a 11
 ### Curva de capital
 ![image](https://user-images.githubusercontent.com/6900313/125370010-e349fe00-e353-11eb-8113-a2a57dc0dda9.png)
 
---
+---
 
 ## SQIA3
 
