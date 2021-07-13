@@ -28,7 +28,7 @@ Depois é só aplicar a estratégia na coloração e na execução para completa
 
 ![image](https://user-images.githubusercontent.com/6900313/125449336-9367e53f-af17-443a-b466-615728f6cbd9.png)
 
-Estas instruções mais específicas podem ser encontradas no arquivo [Instrucoes.md)() neste repositório.
+Estas instruções mais específicas podem ser encontradas no arquivo [Instrucoes.md](https://github.com/Zamana/nelogica/blob/main/INSTRUCOES.md) neste repositório.
 
 # *Backtests*
 
