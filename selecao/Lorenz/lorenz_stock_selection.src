@@ -29,10 +29,10 @@ Input
 Begin
 
   // Cálculo das médias
-  vCurta := MediaExp(9, Close);
-  vMedia := Media(21, Close);
-  vLonga := Media(200, Close);
-  vLonguissima := Media(500, Close);
+  vCurta := MediaExp(m_Curta, Close);
+  vMedia := Media(m_Media, Close);
+  vLonga := Media(m_Longa, Close);
+  vLonguissima := Media(m_Longuissima, Close);
 
   // Critério de seleção
   if (CLOSE > vCurta) and
