@@ -26,7 +26,7 @@ OU
 
 Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos foram esses, de acordo com os critérios a seguir:
 
-1) Período: últimos 5 anos
+1) Período: últimos 5 anos (referência: outubro/2021)
 2) Capital inicial: R$ 70.000,00
 3) Entrada em cada trade: 10% do capital total (reinvestindo os lucros), máximo de 7 trades simultâneos
 4) Portfólio: IBXX
