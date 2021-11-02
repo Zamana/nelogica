@@ -12,7 +12,19 @@ Input
   Periodo_Superior(10);
   Periodo_Inferior(5);
 
+Var
+  vLong : Float;
+  vShort : Float;
+  vMean : Float;
+
 begin
-  Plot(Highest(HIGH[1], Periodo_Superior));
-  Plot2(Lowest(LOW[1], Periodo_Inferior));
+
+  vLong :=  Highest(HIGH[1], Periodo_Superior);
+  vShort :=  Lowest(LOW[1], Periodo_Inferior);
+  vMean := (vLong + vShort)/2;
+
+  Plot(vLong);
+  Plot2(vShort);
+  Plot3(vMean);
+
 end;
