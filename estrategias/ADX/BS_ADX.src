@@ -1,0 +1,55 @@
+//////////////////////////////////////////////////
+// Estratégia de EXECUÇÃO, SELEÇÃO E COLORAÇÃO 
+// para o PROFIT, para compra & venda baseada no 
+// cruzamento das linhas "+" e "-" do ADX/DI+/DI- 
+// e ascendência do ADX.
+//
+// Acrescentei uma modificação considerando a 
+// saída tanto no cruzamento inverso do DI+/DI-
+// quanto na descendência do ADX.
+//
+// Fica a critério usar ou não esta variação. 
+// Basta comentar/excluir a parte "OU" da 
+// estratégia na critério de venda.
+//////////////////////////////////////////////////
+
+Input
+  Periodo(14);
+
+Var
+  vDIP     : Float;
+  vDIM     : Float;
+  vADX     : Float;  
+
+begin
+  vDIP     := DipDim(Periodo)|0|;
+  vDIM     := DipDim(Periodo)|1|;
+  vADX     := ADX(Periodo, Periodo);  
+
+  // Critérios para a venda
+  // Linha "+" abaixo da linha "-"
+  // OU
+  // ADX descendente
+  if (IsBought) then
+  begin
+    if (vDIP < vDIM) OR (vADX[1] - vADX > 0.02)     
+    then 
+      begin
+        SellToCoverStop(LOW[1] - 0.01, LOW[1]-0.01);
+        PaintBar(clFucsia);
+      end;
+  end
+
+  // Critérios para COMPRA
+  // Linha "+" acima da linha "-"
+  // E
+  // ADX ascendente 
+  else if (vDIP > vDIM) AND (vADX - vADX[1] > 0.2)  
+  then
+    begin
+      BuyLimit(High[1] + 0.01); 
+      Select;
+      PaintBar(clAqua);           
+    end;
+  end;
+end;
