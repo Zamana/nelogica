@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////
+// Estratégia de EXECUÇÃO, SELEÇÃO E COLORAÇÃO 
+// para o PROFIT, para compra & venda baseada no 
+// setup DONCHIAN-10-5, conforme descrito pelo Professor
+// Daniel Solano em seu projeto "BOLSA SEMANAL"
+// 
+// https://www.youtube.com/watch?v=OUSFwM8g3uI
+//
+//////////////////////////////////////////////////
+
+Input
+  Periodo_longo(10);
+  Periodo_curto(5);
+
+Var
+  vLong  : Float;
+  vShort : Float;
+
+begin
+
+  vLong  := Highest(HIGH[1], Periodo_Longo);
+  vShort := Lowest(LOW[1], Periodo_Curto);
+
+  // Critérios para a venda
+  // FECHAMENTO do candle de ontem ABAIXO do canal INFERIOR
+  if (IsBought) then
+  begin
+    if (CLOSE[1] < vShort[1])    
+    then 
+    begin
+      SellToCoverStop(OPEN, OPEN);
+      PaintBar(clFucsia);
+    end;
+  end    
+    
+  // Critérios para COMPRA
+  // FECHAMENTO do candle de antes de ontem ABAIXO do canal SUPERIOR
+  // E
+  // FECHAMENTO do candle de ontem ACIMA do canal SUPERIOR
+  else if (CLOSE[2] < vLong[2]) 
+  and (CLOSE[1] > vLong[1])
+  then
+     Begin
+       BuyLimit(OPEN); 
+       Select;
+       PaintBar(clAqua);           
+     end;
+  end;
+end;
