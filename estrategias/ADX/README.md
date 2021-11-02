@@ -9,15 +9,19 @@ Esta estratégia usa o indicador ADX e as linhas DI+ e DI- como referências par
 Um sinal de entrada na ponta da compra (operação LONG) é gerado quando:
 
 1) A linha DI+ cruza e fica ACIMA da linha DI-;
+
 E
-3) A linha ADX está ascendente
+
+2) A linha ADX está ascendente
 
 ## Critério para venda
 
 O sinal de saída do trade ocorre quando:
 
 1) A linha DI+ cruza e fica ABAIXO da linha DI-;
+
 OU
+
 2) A linha ADX fica descendente(1)
 
 > (1) este último critério é uma adaptação minha e não consta na estratégia original; pode ser removido, bastando comentar a parte "OR" do código no critério de venda.
