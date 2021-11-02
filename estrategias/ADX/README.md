@@ -56,8 +56,11 @@ Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos fo
 ## Piores resultados
 ![image](https://user-images.githubusercontent.com/6900313/139920540-3582215d-a8bb-44b0-a657-6f0515c7212d.png)
 
-> **OBSERVAÇÃO IMPORTANTE:**
+> **OBSERVAÇÕES IMPORTANTES**
 > 
 > Lucros passados não são garantia de lucros futuros.
 > 
 > Faça seus próprios *backtests* e opere na conta simulada antes de investir seu dinheiro real em estratégias automatizadas.
+>
+> Atente para ações "fora da curva" no período, como MGLU3 e BID4, por exemplo, que distorcem o retorno da estratégia.
+> 
