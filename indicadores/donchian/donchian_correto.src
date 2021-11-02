@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////
+//
+// Código para implementação do indicador
+// DONCHIAN de forma "correta".
+//
+// O indicador nativo do Profit é codificado
+// de tal forma que os preços nunca ultrapassam
+// as linhas...
+/////////////////////////////////////////////////
+
+Input
+  Periodo_Superior(10);
+  Periodo_Inferior(5);
+
+begin
+  Plot(Highest(HIGH[1], Periodo_Superior));
+  Plot2(Lowest(LOW[1], Periodo_Inferior));
+end;
