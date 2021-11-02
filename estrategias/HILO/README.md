@@ -8,13 +8,13 @@ Esta estratégia usa o indicador HILO originalmente de 6 períodos e no tempo gr
 
 Um sinal de entrada na ponta da compra (operação LONG) é gerado quando:
 
-1) O HILO de 6 períodos no gráfico SEMANAL para para BAIXO dos preços;
+1) O HILO de 6 períodos no gráfico SEMANAL fica ABAIXO dos preços;
 
 ## Critério para venda
 
 O sinal de saída do trade ocorre quando:
 
-1) O HILO de 6 períodos no gráfico SEMANAL para para CIMA dos preços;
+1) O HILO de 6 períodos no gráfico SEMANAL fica ACIMA dos preços;
 
 
 # Backtest
@@ -51,7 +51,7 @@ Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos fo
 ## Piores resultados
 ![image](https://user-images.githubusercontent.com/6900313/139922312-f78148fc-94bb-40ff-a303-171d2a662acd.png)
 
-> **OBSERVAÇÃO IMPORTANTE:**
+> **OBSERVAÇÕES IMPORTANTES**
 > 
 > Lucros passados não são garantia de lucros futuros.
 > 
