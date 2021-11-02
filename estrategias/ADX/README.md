@@ -6,7 +6,7 @@ Esta estratégia usa o indicador ADX e as linhas DI+ e DI- como referências par
 
 ## Critério para compra
 
-Um sinal de entrada na ponta da compra (operação LONG) é ativado quando:
+Um sinal de entrada na ponta da compra (operação LONG) é gerado quando:
 
 1) A linha DI+ cruza e fica ACIMA da linha DI-;
 E
