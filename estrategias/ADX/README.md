@@ -9,23 +9,26 @@ Esta estratégia usa o indicador ADX e as linhas DI+ e DI- como referências par
 Um sinal de entrada na ponta da compra (operação LONG) é ativado quando:
 
 1) A linha DI+ cruza e fica ACIMA da linha DI-;
-2) A linha ADX está ascendente
+E
+3) A linha ADX está ascendente
 
 ## Critério para venda
 
+O sinal de saída do trade ocorre quando:
+
 1) A linha DI+ cruza e fica ABAIXO da linha DI-;
-ou
+OU
 2) A linha ADX fica descendente(1)
 
 > (1) este último critério é uma adaptação minha e não consta na estratégia original; pode ser removido, bastando comentar a parte "OR" do código no critério de venda.
 
 # Backtest
 
-Utilizando o InvestCharts, os resultados obtidos foram esses, de acordo com os critérios a seguir:
+Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos foram esses, de acordo com os critérios a seguir:
 
 1) Período: últimos 5 anos
 2) Capital inicial: R$ 70.000,00
-3) Valor por trade: 10% do capital total (reinvesindo os lucros), máximo de 7 trades simultâneos
+3) Entrada em cada trade: 10% do capital total (reinvestindo os lucros), máximo de 7 trades simultâneos
 4) Portfólio: IBXX
 5) Tempo gráfico: diário
 
@@ -55,5 +58,5 @@ Utilizando o InvestCharts, os resultados obtidos foram esses, de acordo com os c
 
 > OBSERVAÇÃO IMPORTANTE:
 > Lucros passados não são garantia de lucros futuros.
-> Faça seus próprios *backtests* e opere na conta simulada antes de investir seu dinheiro real em estratégias
-
+> 
+> Faça seus próprios *backtests* e opere na conta simulada antes de investir seu dinheiro real em estratégias automatizadas.
