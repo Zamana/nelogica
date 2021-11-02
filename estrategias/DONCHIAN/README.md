@@ -2,6 +2,11 @@
 
 Esta estratégia usa o indicador DONCHIAN originalmente de períodos 10 para as máximas e 5 para as mínimas, no tempo gráfico **SEMANAL**, como referências para entrada e saída de trades.
 
+> OBSERVAÇÃO:
+> 
+> Para visualizar corretamente esta estratégia no Profit é necessário usar o indicador ["donchian_correto"](https://github.com/Zamana/nelogica/tree/main/indicadores/donchian).
+> 
+
 # Critérios
 
 ## Critério para compra
