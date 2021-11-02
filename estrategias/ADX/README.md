@@ -56,6 +56,10 @@ Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos fo
 ## Piores resultados
 ![image](https://user-images.githubusercontent.com/6900313/139920540-3582215d-a8bb-44b0-a657-6f0515c7212d.png)
 
+## Exemplo no Profit
+![image](https://user-images.githubusercontent.com/6900313/139924300-6927d0ab-0841-47a7-bca3-bad191c03ddc.png)
+
+
 > **OBSERVAÇÕES IMPORTANTES**
 > 
 > Lucros passados não são garantia de lucros futuros.
