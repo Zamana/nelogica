@@ -19,7 +19,7 @@ Um sinal de entrada na ponta da compra (operação LONG) é gerado quando:
 
 O sinal de saída do trade ocorre quando:
 
-1) O primeiro candle fechar ABAIXO da linha INFERIOR do Donchina de 5 períodos; a saída efetivamente será na abertura do candle seguinte.
+1) O primeiro candle fechar ABAIXO da linha INFERIOR do Donchian de 5 períodos; a saída efetivamente será na abertura do candle seguinte.
 
 
 # Backtest
