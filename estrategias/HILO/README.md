@@ -46,10 +46,14 @@ Utilizando o [InvestCharts](https://investcharts.com/), os resultados obtidos fo
 ## Backtest individual
 
 ### Melhores resultados
-![image](https://user-images.githubusercontent.com/6900313/139922269-886cb33e-aba5-48c8-93b4-ae20dfcdd8ae.png)
+![image](https://user-images.githubusercontent.com/6900313/139922938-5fe35495-ab3a-47a2-8961-21ee786a8165.png)
 
 ## Piores resultados
 ![image](https://user-images.githubusercontent.com/6900313/139922312-f78148fc-94bb-40ff-a303-171d2a662acd.png)
+
+## Exemplo da estratégia no Profit
+![image](https://user-images.githubusercontent.com/6900313/139923196-48973dab-1b7b-4503-a8c1-54fa531e6c2a.png)
+
 
 > **OBSERVAÇÕES IMPORTANTES**
 > 
