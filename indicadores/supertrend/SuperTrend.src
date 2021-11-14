@@ -72,7 +72,7 @@ Begin
     if (vBUB < vFUB[1]) OR (CLOSE[1] > vFUB[1]) then vFUB := vBUB else vFUB := vFUB[1];
     if (vBLB > vFLB[1]) OR (CLOSE[1] < vFLB[1]) then vFLB := vBLB else vFLB := vFLB[1];
     
-    // E finalmente indicador SuperTrend
+    // E finalmente o indicador SuperTrend
     if (vSTI[1] = vFUB[1]) and (CLOSE < vFUB) then begin vSTI := vFUB; vTrend := 1; end else 
     if (vSTI[1] = vFUB[1]) and (CLOSE > vFUB) then begin vSTI := vFLB; vTrend := 0; end else
     if (vSTI[1] = vFLB[1]) and (CLOSE > vFLB) then begin vSTI := vFLB; vTrend := 0; end else
