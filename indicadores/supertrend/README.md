@@ -40,13 +40,13 @@ Resumindo, esses são os parâmetros do indicador:
 
 ![image](https://user-images.githubusercontent.com/6900313/141684273-eada88df-9a9c-4e36-b73b-0a9c59764b00.png)
 
-1) Período (default: 10)
-2) Desvio (ou multiplicador; default: 3)
-3) Tipo (de média)
-  3.1) 0: Aritmétida (SMA)
-  3.2) 1: Exponencial (EMA)
-  3.3) 2: Welles Wilder (default)
-  3.4) 3: Ponderada
-4) Linha:
-  4.1) 0: plotagem no gráfico, acima ou abaixo dos preços (default)
-  4.2) 1: retorna 1 para tendência de alta (indicador ABAIXO dos preços) ou 0 para tendência de baixa (indicador ACIMA dos preços).
+* Período (default: 10)
+* Desvio (ou multiplicador; default: 3)
+* Tipo (de média)
+    * 0: Aritmétida (SMA)
+    * 1: Exponencial (EMA)
+    * 2: Welles Wilder (default)
+    * 3: Ponderada
+* Linha:
+    * 0: plotagem no gráfico, acima ou abaixo dos preços (default)
+    * 1: retorna 1 para tendência de alta (indicador ABAIXO dos preços) ou 0 para tendência de baixa (indicador ACIMA dos preços).
