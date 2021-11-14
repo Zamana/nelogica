@@ -15,7 +15,7 @@ Classicamente o indicador é usado com os parâmetros de 10 períodos e um "mult
 Como o indicador é fortemente baseado e influenciado pela média to True Range (o Average True Range, ou ATR), o tipo de média utilizado acaba tendo impacto também. Por esta razão, acrescentei mais um parâmetro para que o tipo de média possa ser escolhido.
 
 ## Tipo de Média
-Tradicionalmente é utilizada a média de (Welles Wilder)_[!https://en.wikipedia.org/wiki/J._Welles_Wilder_Jr.]_, o próprio criador de vários indicadores, entre eles o ATR, mas resolvi deixar a possibilidade de se utilizar outras médias, como Aritmética Simples e Exponencial.
+Tradicionalmente é utilizada a média de [Welles Wilder](https://en.wikipedia.org/wiki/J._Welles_Wilder_Jr.), o próprio criador de vários indicadores, entre eles o ATR, mas resolvi deixar a possibilidade de se utilizar outras médias, como Aritmética Simples e Exponencial.
 
 ## Tipo de Linha
 Este parâmetro é mais um solução de contorno do que um parâmetro em si. Explicando melhor...
@@ -24,6 +24,8 @@ No Profit, da Nelogica, é possível, ao invocar certos indicadores, como o Stop
 
 ### StopAtr
 ![image](https://user-images.githubusercontent.com/6900313/141683999-4e4fc293-e4f8-4256-ae29-f4daab378db4.png)
+
+---
 
 ### HiLoActivator
 ![image](https://user-images.githubusercontent.com/6900313/141684061-268559eb-ff8d-401a-9cf5-06c107a480bf.png)
@@ -40,6 +42,5 @@ Resumindo, esses são os parâmetros do indicador:
 
 1) Período (default: 10)
 2) Desvio (ou multiplicador; default: 3)
-3) Tipo (de média; default: 2, ou "Welles Wilder")
-4) Linha (default: 0, ou plotagem no gráfico de preços. Utilize 1 para uso em estratégias)
-
+3) Tipo (de média; default: 2, ou "Welles Wilder"). Utilize 0 para Aritmética e 1 para Exponencial
+4) Linha (default: 0, ou plotagem no gráfico de preços) Utilize 1 para uso em estratégias (retornará 0 ou 1)
