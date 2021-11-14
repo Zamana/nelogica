@@ -4,10 +4,6 @@ O indicador SuperTrend, conforme consta em se próprio nome, é um indicador da 
 
 É um indicador simples de usar (mas não tão simples de calcular...). Ele não prevê a tendência do mercado, mas a mostra claramente uma vez que tenha sido estabelecida. Por isso mesmo e também como qualquer outro indicador de tendência, fornece sinais falsos quando o ativo está lateralizado, e portanto sem tendência.
 
-Particularmente acredito que não possa ser usado isoladamente como um sinal de compra e venda, mas sempre acompanhando de algum outro indicador de outra categoria para filtrar ou confirmar o sinal.
-
-Segundo o professor [Daniel Solano](https://www.youtube.com/watch?v=NMhwg0qBtIw), é possível emulá-lo com o StopATR de 10 períodos e desvio-padrão de 3, mas aqui está a implementação oficial para o Profit, que não dispõe deste indicador nativamente.
-
 # Parâmetros
 
 ## Período e "Multiplicador"
