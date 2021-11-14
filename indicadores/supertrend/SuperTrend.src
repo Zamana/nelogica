@@ -1,0 +1,100 @@
+/////////////////////////////////////////////////////
+// INDICADOR SUPER TREND para o Profit da Nelogica //
+// Autor: C. R. Zamana (czamana@gmail.com)         //
+/////////////////////////////////////////////////////
+
+Input
+  //////////////////////////////
+  // Parâmetros customizáveis //
+  //////////////////////////////
+
+  // Periodo
+  // Valor clássico: 10
+  Periodo(10);
+
+  // Desvio ou "multiplicador"
+  // Valor clássico: 3
+  Desvio(3);
+  
+  // Tipo de média usada para o AverageTrueRange (*)
+  // 0: Média Aritmética Simples (SMA)
+  // 1: Média Exponencial (EMA)
+  // 2: Média original do criador Welles Wilder (WM) 
+  Tipo(2);
+  
+  // Tipo de indicador:
+  // 0: indicador plotado no gráfico de preços
+  // 1: retorna 0 ou 1 de acordo com a tendência(**)
+  Linha(0);     
+
+Var  
+
+  ////////////////////////
+  // Variáveis de apoio //
+  ////////////////////////
+  vATR : Float; // ATR
+  vBUB : Serie; // Basic Upper Band
+  vBLB : Serie; // Basic Lower Band
+  vFUB : Serie; // Final Upper Band
+  vFLB : Serie; // Final Lower Band
+  vSTI : Serie; // SuperTrend Indicator 
+  vHLA : Float; // Media do HIGH e do LOW
+  
+  vTrend : Float; // Flag de tendência
+
+Begin
+
+    // (*)
+    // Cálculo do Average True Range (ATR)
+    // O SuperTrend é muito sensível ao ATR
+    // Dependendo do tipo de média escolhida, os
+    // valores podem ficar completamente distintos
+    // dependendo da dinâmica dos preços
+    vATR := AvgTrueRange(Periodo, Tipo);
+
+    // HACK! HACK! HACK!
+    // Em algumas situações muito específicas, o ATR
+    // fica com valor ZERO, que se propaga indefinidamente
+    // e impede a plotagem do indicador.
+    // Remova o HACK e verifique o que acontece com VALE3,
+    // por exemplo...
+    //
+    // Este HACK visa contornar este problema
+    if (vATR = 0) then vATR := 0.01;
+    
+    // Definido o ATR, vamos ao cálculo do SuperTrend,
+    // primeiro calculando o Basic Upper Trend e o Basic Lower Trend
+    vHLA := (HIGH + LOW)/2;     
+    vBUB := vHLA + (Desvio * vATR);
+    vBLB := vHLA - (Desvio * vATR);
+      
+    // E agora o FINAL UPPER BAND e o FINAL LOWER BAND
+    if (vBUB < vFUB[1]) OR (CLOSE[1] > vFUB[1]) then vFUB := vBUB else vFUB := vFUB[1];
+    if (vBLB > vFLB[1]) OR (CLOSE[1] < vFLB[1]) then vFLB := vBLB else vFLB := vFLB[1];
+    
+    // E finalmente indicador SuperTrend
+    if (vSTI[1] = vFUB[1]) and (CLOSE < vFUB) then begin vSTI := vFUB; vTrend := 1; end else 
+    if (vSTI[1] = vFUB[1]) and (CLOSE > vFUB) then begin vSTI := vFLB; vTrend := 0; end else
+    if (vSTI[1] = vFLB[1]) and (CLOSE > vFLB) then begin vSTI := vFLB; vTrend := 0; end else
+    if (vSTI[1] = vFLB[1]) and (CLOSE < vFLB) then begin vSTI := vFUB; vTrend := 1; end;
+  
+    // (**)
+    // Em alguns indicadores é possível obter o valor fornecido ou então
+    // a "linha de tendência", geralmente 0 ou 1, como por exemplo no
+    // HiloActivator e no StopATR, usando o sufixo "|1|" após a chamada da
+    // função.
+    // Infelizmente, porém, este recurso não existe nesta linguagem
+    // de programação fornecida aos usuários. Para contornar este problema,
+    // o parâmetro "Linha" pode ser usado como se fosse o "|1|", para que
+    // se possa escolher se se deseja a plotagem dos valores no gráfico de 
+    // preços (default: 0) ou apenas a "linha de tendência", o que ajuda
+    // muito na codificação de estratégias de execução, coloração e seleção.
+    // Resumindo: use Linha -> 0 para plotar o indicador no gráfico, e 
+    // Linha -> 1 para uso em estratégias, coloração e seleção (SCREENING)
+    if (Linha = 0) then
+    begin
+      if (vTrend = 1) then Plot(vSTI) else Plot2(vSTI);
+    end
+    else
+      Plot(vTrend);            
+End;
