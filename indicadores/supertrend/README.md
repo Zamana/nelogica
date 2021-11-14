@@ -1,6 +1,6 @@
 # SuperTrend
 
-O indicador SuperTrend, conforme consta em se próprio nome, é um indicador da categoria de tendência, e foi criado por [Olivier Seban](!https://www.olivier-seban.com/).
+O indicador SuperTrend, conforme consta em se próprio nome, é um indicador da categoria de tendência, e foi criado por [Olivier Seban](https://www.olivier-seban.com/).
 
 É um indicador simples de usar (mas não tão simples de calcular...). Ele não prevê a tendência do mercado, mas a mostra claramente uma vez que tenha sido estabelecida. Por isso mesmo e também como qualquer outro indicador de tendência, fornece sinais falsos quando o ativo está lateralizado, e portanto sem tendência.
 
