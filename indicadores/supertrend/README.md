@@ -16,7 +16,7 @@ Como o indicador é fortemente baseado e influenciado pela média to True Range 
 Tradicionalmente é utilizada a média de [Welles Wilder](https://en.wikipedia.org/wiki/J._Welles_Wilder_Jr.), o próprio criador de vários indicadores, entre eles o ATR, mas resolvi deixar a possibilidade de se utilizar outras médias, como Aritmética Simples e Exponencial.
 
 ## Tipo de Linha
-Este parâmetro é mais um solução de contorno do que um parâmetro em si. Explicando melhor...
+Este parâmetro é mais uma solução de contorno do que um parâmetro em si. Explicando melhor...
 
 No Profit, da Nelogica, é possível, ao invocar certos indicadores, como o StopATR ou o HiLoActivator, passar um sufixo "|1|" para se indicar que se está interessado apenas em saber se o indicador está abaixo ou acima dos preços. Exemplo:
 
